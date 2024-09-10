@@ -8,20 +8,20 @@
     <title>Claire's Portfolio</title>
 </head>
 
-<body>
-    <header>
+<body class="app">
+    <header class="navbar">
         <h1>Claire Muiru</h1>
-    </header>
-    <nav>
-        <ul>
+        <ul class="navbar-menu">
             <li>About</li>
             <li>Skills</li>
             <li>Projects</li>
             <li>Services</li>
             <li>Contacts</li>
-            <button>Hire Me</button>
         </ul>
-    </nav>
+        <div class="navbar-right">
+            <button>Hire Me</button>
+        </div>
+    </header>
     <main>
         <section class="header">
             <div class="header-contents">
@@ -37,30 +37,37 @@
                 <h2>Showcasing My Experience</h2>
                 <p>From Crafting clean code to Delivering Creative Skills</p>
                 <div class="cards">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Communication</li>
-                        <li>Teamwork</li>
-                        <li>Problem-Solving</li>
-                        <li>Adaptability</li>
-                        <li>Time Management</li>
-                        <li>Creativity</li>
-                    </ul>
-                    <h3>Backend Skills</h3>
-                    <ul>
-                        <li>Flask</li>
-                        <li>Python</li>
-                        <li>Databases</li>
-                    </ul>
-                    <h3>Frontend Skills</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>TypeScript</li>
-                        <li>JavaScript</li>
-                        <li>React Js</li>
-                        <li>Web Design</li>
-                    </ul>
+                    <!-- Single card containing both h3 and ul -->
+                    <div class="card">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Problem-Solving</li>
+                            <li>Adaptability</li>
+                            <li>Time Management</li>
+                            <li>Creativity</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Backend Skills</h3>
+                        <ul>
+                            <li>Flask</li>
+                            <li>Python</li>
+                            <li>Databases</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Frontend Skills</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>React Js</li>
+                            <li>Web Design</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
