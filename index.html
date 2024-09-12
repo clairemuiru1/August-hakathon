@@ -19,9 +19,15 @@
             <li>Contacts</li>
         </ul>
         <div class="navbar-right">
-            <button>Hire Me</button>
+            <a href="assets/Claire Muiru.pdf" download>
+                <button>Hire Me</button>
+            </a>
         </div>
     </header>
+    <div class="typewriter">
+        <h2>Hi, I'm Claire Njeri Muiru, <span id="dynamicText"></span><span class="cursor">|</span></h2>
+      </div>
+      <script src="script.js"></script>
     <main>
         <section class="header">
             <div class="header-contents">
@@ -32,13 +38,17 @@
                 <button>Explore my work</button>
             </div>
         </section>
+        <div class="num">
+            <h1>90+ projects</h1>
+            <h1>2 Years</h1>
+            <h1>2 awards</h1>
+        </div>
         <section>
             <div class="skills">
                 <h2>Showcasing My Experience</h2>
                 <p>From Crafting clean code to Delivering Creative Skills</p>
                 <div class="cards">
-                    <!-- Single card containing both h3 and ul -->
-                    <div class="card">
+                    <div class="card1">
                         <h3>Soft Skills</h3>
                         <ul>
                             <li>Communication</li>
@@ -49,7 +59,7 @@
                             <li>Creativity</li>
                         </ul>
                     </div>
-                    <div class="card">
+                    <div class="card1">
                         <h3>Backend Skills</h3>
                         <ul>
                             <li>Flask</li>
@@ -57,7 +67,7 @@
                             <li>Databases</li>
                         </ul>
                     </div>
-                    <div class="card">
+                    <div class="card1">
                         <h3>Frontend Skills</h3>
                         <ul>
                             <li>HTML</li>
@@ -78,143 +88,141 @@
                 <div class="portfolio-item">
                     <img src="assets/Habibi.png" alt="Habibi (Traveling App)">
                     <h3>Habibi (Traveling App)</h3>
-                    <p>A travel app to plan and book trips.</p>
-                    <div class="buttons">
-                        <a href="https://travel-and-stay-five.vercel.app/" target="_blank">
-                            <button>View Project</button>
-                        </a>
-                        <a href="https://github.com/clairemuiru1/Travel-and-Stay" target="_blank">
-                            <button>GitHub</button>
-                        </a>
+                    <div class="description">
+                        <p>A travel app to plan and book trips.</p>
+                        <div class="buttons">
+                            <a href="https://travel-and-stay-five.vercel.app/" target="_blank">
+                                <button>View Project</button>
+                            </a>
+                            <a href="https://github.com/clairemuiru1/Travel-and-Stay" target="_blank">
+                                <button>GitHub</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
+        
                 <div class="portfolio-item">
                     <img src="assets/Food-Del.png" alt="Food Delivery App">
                     <h3>Food Delivery App</h3>
-                    <p>An app to order food from various restaurants.</p>
-                    <div class="buttons">
-                        <a href="https://food-delivery-k1br.vercel.app/" target="_blank">
-                            <button>View Project</button>
-                        </a>
-                        <a href="https://github.com/clairemuiru1/Food-Delivery" target="_blank">
-                            <button>GitHub</button>
-                        </a>
+                    <div class="description">
+                        <p>An app to order food from various restaurants.</p>
+                        <div class="buttons">
+                            <a href="https://food-delivery-k1br.vercel.app/" target="_blank">
+                                <button>View Project</button>
+                            </a>
+                            <a href="https://github.com/clairemuiru1/Food-Delivery" target="_blank">
+                                <button>GitHub</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
+        
                 <div class="portfolio-item">
                     <img src="assets/Expence.png" alt="Expense Tracker">
                     <h3>Expense Tracker</h3>
-                    <p>A tool to track your expenses and manage budgets.</p>
-                    <div class="buttons">
-                        <a href="https://expense-tracker-git-main-clairemuiru1s-projects.vercel.app/" target="_blank">
-                            <button>View Project</button>
-                        </a>
-                        <a href="https://github.com/clairemuiru1/Expense-tracker" target="_blank">
-                            <button>GitHub</button>
-                        </a>
+                    <div class="description">
+                        <p>A tool to track your expenses and manage budgets.</p>
+                        <div class="buttons">
+                            <a href="https://expense-tracker-git-main-clairemuiru1s-projects.vercel.app/" target="_blank">
+                                <button>View Project</button>
+                            </a>
+                            <a href="https://github.com/clairemuiru1/Expense-tracker" target="_blank">
+                                <button>GitHub</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
+        
                 <div class="portfolio-item">
                     <img src="assets/planner.png" alt="Event Planner">
                     <h3>Event Planner</h3>
-                    <p>A web application to plan and manage events.</p>
-                    <div class="buttons">
-                        <a href="https://example.com/event-planner" target="_blank">
-                            <button>View Project</button>
-                        </a>
-                        <a href="https://github.com/Moringa-Group-Work/server" target="_blank">
-                            <button>GitHub</button>
-                        </a>
+                    <div class="description">
+                        <p>A web application to plan and manage events.</p>
+                        <div class="buttons">
+                            <a href="https://example.com/event-planner" target="_blank">
+                                <button>View Project</button>
+                            </a>
+                            <a href="https://github.com/Moringa-Group-Work/server" target="_blank">
+                                <button>GitHub</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <section>
+            <h2 class="service">What I Offer!</h2>
             <div class="services">
-                <h2></h2>
-                <h4>Professional Code</h4>
-                <p>Delivering high-quality, efficient, and well-documented code that adheres to industry standards. This
-                    ensures your software is reliable, maintainable, and scalable. Our focus on best practices and clean
-                    architecture guarantees a smooth development process and robust final product.,
-                </p>
-                <h4>Creative Thinking</h4>
-                <p>Leveraging innovative solutions and unique approaches to tackle complex problems. Our creative
-                    thinking fosters original ideas that enhance project outcomes, providing you with cutting-edge
-                    solutions. This approach ensures your projects stand out and deliver exceptional value to your
-                    audience.
-                </p>
-                <h4>SEO & Marketing</h4>
-                <p>Implementing comprehensive search engine optimization strategies and effective digital marketing
-                    campaigns. Our goal is to boost your online presence, drive targeted traffic, and increase
-                    conversions. We use data-driven techniques to optimize your content and reach your desired audience
-                    efficiently.
-                </p>
-                <h4>User-Friendly Design</h4>
-                <p>
-                    Creating intuitive, accessible, and visually appealing interfaces. Our user-friendly design
-                    principles
-                    ensure your website or application is easy to navigate and enjoyable to use. We prioritize user
-                    experience, making sure your audience has a seamless and satisfying interaction with your platform.
-                </p>
-                <h4>Web Development</h4>
-                <p>Building robust, scalable websites using modern technologies and best practices. We tailor our
-                    development process to meet your specific needs, ensuring your site is fast, secure, and responsive.
-                    Our expertise guarantees a professional web presence that supports your business goals.
-                </p>
-                <h4>Data and Databases</h4>
-                <p>Managing and organizing data with expertise in database design, development, and maintenance. We
-                    ensure your data is stored securely and accessed efficiently. Our solutions support your business
-                    operations and decision-making processes by providing reliable and well-structured data management
-                    systems.
-                </p>
+                <div class="card">
+                    <h4>Professional Code</h4>
+                    <p>Delivering high-quality, efficient, and well-documented code that adheres to industry standards. This ensures your software is reliable, maintainable, and scalable.</p>
+                </div>
+                <div class="card">
+                    <h4>Creative Thinking</h4>
+                    <p>Leveraging innovative solutions and unique approaches to tackle complex problems. Our creative thinking fosters original ideas that enhance project outcomes.</p>
+                </div>
+                <div class="card">
+                    <h4>SEO & Marketing</h4>
+                    <p>Implementing comprehensive search engine optimization strategies and effective digital marketing campaigns to boost your online presence and drive traffic.</p>
+                </div>
+                <div class="card">
+                    <h4>User-Friendly Design</h4>
+                    <p>Creating intuitive, accessible, and visually appealing interfaces that prioritize user experience and ensure ease of use.</p>
+                </div>
+                <div class="card">
+                    <h4>Web Development</h4>
+                    <p>Building robust, scalable websites using modern technologies to meet your specific needs, ensuring speed, security, and responsiveness.</p>
+                </div>
+                <div class="card">
+                    <h4>Data and Databases</h4>
+                    <p>Managing and organizing data with expertise in database design and maintenance to ensure secure and efficient access.</p>
+                </div>
             </div>
         </section>
+        
         <section>
             <img src="assets/edu.png" alt="education">
         </section>
         <section></section>
         <section>
-            <div class="details">
-                <h2>Contact Me</h2>
-                <p>If you would like to get in touch with me,please feel free to reach out through the following
-                    platforms</p>
-                <ul>
-                    <li>Email: <a href="mailto:muiruclaire@gmail.com">muiruclaire@gmail.com</a></li>
-                    <li>GitHub: <a href="https://github.com/clairemuiru1">https://github.com/clairemuiru1</a></li>
-                    <li>LinkedIn: <a
-                            href="https://www.linkedin.com/in/claire-muiru-147272304/">https://www.linkedin.com/in/claire-muiru-147272304/</a>
-                    </li>
-                    <li>Phone no: 0725381105</li>
-                </ul>
+            <h2 class="service">Contact Me</h2>
+            <div class="contact-container">
+                <div class="details">
+                    <p>If you would like to get in touch with me, please feel free to reach out through the following platforms:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:muiruclaire@gmail.com">muiruclaire@gmail.com</a></li>
+                        <li>GitHub: <a href="https://github.com/clairemuiru1">https://github.com/clairemuiru1</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/claire-muiru-147272304/">LinkedIn Profile</a></li>
+                        <li>Phone no: 0725381105</li>
+                    </ul>
+                </div>
+                <form action="your-server-endpoint" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                    </div>
+        
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
-            <form action="your-server-endpoint" method="POST">
-                <div class="form-group">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here"
-                        required></textarea>
-                </div>
-
-                <button type="submit">Send Message</button>
-            </form>
         </section>
+        
     </main>
 
 </body>

@@ -1,7 +1,8 @@
-body {
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #070606;
   }
@@ -68,6 +69,26 @@ body {
     background: #fff4f2;
     color: tomato;
 }
+
+.typewriter h2 {
+    font-size: 24px;
+    color: #49557e;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid none;
+    font-family: monospace;
+  }
+  .typewriter h2 span {
+    color: tomato;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
 .header{
     height: 34vw;
     margin: 30px auto;
@@ -109,6 +130,11 @@ body {
     background: #fff4f2;
     color: tomato; 
 }
+.num{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
 .skills {
     display: flex;
     flex-direction: column;
@@ -137,17 +163,16 @@ body {
     width: 100%;
 }
 
-.card {
+.card1 {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     cursor: pointer;
-    transition: background 0.3s, color 0.3s;
 }
 
-.card h3 {
+.card1 h3 {
     font-size: 1.5rem;
     color: tomato;
     padding: 10px;
@@ -155,12 +180,12 @@ body {
     margin-bottom: 15px;
 }
 
-.card ul {
+.card1 ul {
     list-style-type: none;
     padding: 0;
 }
 
-.card ul li {
+.card1 ul li {
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
@@ -176,6 +201,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
+}
+.projects h2, p {
+    text-align: center;
 }
 .portfolio-item {
     position: relative;
@@ -187,14 +216,18 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .portfolio-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
 .portfolio-item img {
     max-width: 100%;
     border-radius: 10px 10px 0 0;
 }
+
+/* Project name styling */
 .portfolio-item h3 {
     text-align: center;
     margin: 0.5rem 0;
@@ -203,6 +236,8 @@ body {
     padding: 0.5rem;
     border-radius: 0 0 10px 10px;
 }
+
+/* Description section (hidden by default) */
 .portfolio-item .description {
     position: absolute;
     top: 0;
@@ -214,48 +249,181 @@ body {
     padding: 1rem;
     transform: translateY(100%);
     transition: transform 0.3s ease-in-out;
+    opacity: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
 }
+
 .portfolio-item:hover .description {
     transform: translateY(0);
     opacity: 1;
 }
+
 .portfolio-item .description p {
     margin-bottom: 1rem;
 }
+
 .portfolio-item .description .buttons {
     display: flex;
     gap: 10px;
 }
+
 .portfolio-item .description .buttons button {
     background: transparent;
     font-size: 16px;
     color: #49557e;
     border: 1px solid tomato;
-    padding: 10px 20px; /* Adjusted padding for better appearance */
+    padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
-    /* background: tomato;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease; */
 }
+
 .portfolio-item .description .buttons button:hover {
     background: #fff4f2;
     color: tomato;
 }
-h1{
+.services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
+
+.service{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:nth-child(2n+1) {
+    background-color: white;
+}
+
+.card:nth-child(2n) {
+    background-color: tomato;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+/* General Styles */
+.service {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.details {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.details ul li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.details a {
+    color: #49557e;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+form {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid tomato;
+    font-size: 1rem;
+}
+
+button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background: #fff4f2;
+    color: tomato;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .details,
+    form {
+        margin: 0;
+        flex-basis: 100%;
+    }
+}
+
 
 
 
