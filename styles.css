@@ -19,7 +19,10 @@
     z-index: 1000;
     transition: top 0.3s ease-in-out;
 }
-
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
 .navbar h1 {
     font-family: 'Great Vibes', cursive;
     color: tomato;
@@ -411,6 +414,95 @@ button:hover {
     color: tomato;
 }
 
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid columns with responsive sizing */
+    gap: 1rem; /* Space between cards */
+    margin-top: 2rem;
+  }
+
+/* Container for the entire carousel */
+.carousel-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem auto;
+    position: relative;
+  }
+  
+  /* Styling for individual testimonial cards */
+  .testimonial-card {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  /* Alternate background for every other card */
+  .testimonial-card:nth-child(even) {
+    background-color: orange;
+  }
+  
+  /* Hover effect */
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Heading for the testimonial author */
+  .testimonial-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: tomato;
+    text-transform: capitalize;
+  }
+  
+  /* Subheading for the author's title */
+  .testimonial-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: normal;
+  }
+  
+  /* Paragraph for the testimonial text */
+  .testimonial-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Left and right navigation buttons */
+  .prev-btn, .next-btn {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    color: tomato;
+  }
+  
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-container {

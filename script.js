@@ -33,3 +33,5 @@ const words = [
   
   document.addEventListener("DOMContentLoaded", typeEffect);
   
+
+  
